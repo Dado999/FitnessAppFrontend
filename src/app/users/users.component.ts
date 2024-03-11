@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
 import {UserServiceService} from "../user-service.service";
 import {CommonModule} from "@angular/common";
+import {SharedService} from "../shared.service";
 
 @Component({
   selector: 'app-users',
@@ -11,16 +12,18 @@ import {CommonModule} from "@angular/common";
   styleUrl: './users.component.css'
 })
 export class UsersComponent implements OnInit {
-  users: User[] = [];
-
-  constructor(private userService: UserServiceService) { }
+  user!: User
+  constructor(private userService: UserServiceService,private sharedService: SharedService) {
+    console.log('1');
+    this.sharedService.trigger$.subscribe((username:string) => this.getUser(username));
+  }
 
   ngOnInit(): void{
-    this.getUsers();
   }
-  getUsers(): void {
-    this.userService.getUsers().subscribe((users: User[]) => {
-      this.users = users;
+  getUser(username:string): void {
+    this.userService.getUser(username).subscribe((user: User) => {
+      this.user = user;
     });
+    console.log(this.user?.username + this.user?.email);
   }
 }

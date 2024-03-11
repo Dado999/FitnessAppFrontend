@@ -9,7 +9,7 @@ export class UserServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<User[]>{
-    return this.http.get<User[]>('http://localhost:8080/users');
+  getUser(username:string): Observable<User>{
+    return this.http.get<User>('http://localhost:8080/users/username/'+username);
   }
 }
