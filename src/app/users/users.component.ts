@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
 import {UserServiceService} from "../user-service.service";
@@ -27,3 +28,4 @@ export class UsersComponent implements OnInit {
     console.log(this.user?.username + this.user?.email);
   }
 }
+//
