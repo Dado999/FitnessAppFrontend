@@ -31,7 +31,6 @@ export class LoginComponent {
        const password = this.passwordInput.nativeElement.value;
       this.userService.getUser(username).subscribe(user => {
         if(user) {
-          console.log(user.password + " " + password + " " + user.username)
           if(user.password === password)
             window.alert("Successful login");
           else

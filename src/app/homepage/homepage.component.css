@@ -1,0 +1,50 @@
+/* Custom CSS for Homepage Component */
+
+.container {
+  padding-top: 20px;
+}
+
+.profile-section {
+  background-color: #f8f9fa; /* Light background color for profile section */
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px; /* Adjust avatar size as needed */
+  height: 50px;
+  border-radius: 50%; /* Make avatar circular */
+  margin-right: 10px; /* Spacing between avatar and username */
+}
+
+.username {
+  font-weight: bold;
+}
+
+.register-button {
+  margin-left: auto; /* Push register button to the right */
+}
+
+.programs-section {
+  padding: 20px;
+}
+
+.program-card {
+  background-color: #ffffff; /* White background color for program cards */
+  padding: 20px;
+  margin-bottom: 20px; /* Spacing between program cards */
+  border: 1px solid #dee2e6; /* Border around program cards */
+}
+
+.pagination {
+  margin-top: 20px; /* Spacing between program cards and pagination */
+  text-align: center; /* Center align pagination */
+}
+
+.pagination button {
+  margin: 0 5px; /* Spacing between pagination buttons */
+}

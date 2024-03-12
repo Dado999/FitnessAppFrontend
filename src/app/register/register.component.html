@@ -2,30 +2,30 @@
   <div class="row">
     <div class="column">
       <label for="name"><b>Name</b></label>
-      <input type="text" id="name" name="name" required>
+      <input #name type="text" id="name" name="name" required>
 
       <label for="surname"><b>Surname</b></label>
-      <input type="text" id="surname" name="surname" required>
+      <input #surname type="text" id="surname" name="surname" required>
 
       <label for="username"><b>Username</b></label>
-      <input type="text" id="username" name="username" required>
+      <input #username type="text" id="username" name="username" required>
     </div>
 
     <div class="column">
       <label for="password"><b>Password</b></label>
-      <input type="password" id="password" name="password" required>
+      <input #password type="password" id="password" name="password" required>
 
       <label for="confirm_password"><b>Confirm Password</b></label>
-      <input type="password" id="confirm_password" name="confirm_password" required>
+      <input #passwordConfirm type="password" id="confirm_password" name="confirm_password" required>
 
       <label for="email"><b>Email</b></label>
-      <input type="email" id="email" name="email" required>
+      <input #email type="email" id="email" name="email" required>
     </div>
   </div>
 
   <label for="city"><b>City</b></label>
-  <input type="text" id="city" name="city" required>
+  <input #city type="text" id="city" name="city" required>
 
-  <button class="btn">Register</button>
+  <button class="btn" (click)="registerUser()">Register</button>
   <button class="btn" routerLinkActive="active" routerLink="" ariaCurrentWhenActive="page">Back to login</button>
 </div>
