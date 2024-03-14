@@ -1,50 +1,78 @@
-/* Custom CSS for Homepage Component */
-
-.container {
-  padding-top: 20px;
+h1 {
+  padding: 10px ;
+  color: #d3d7dd;
 }
 
-.profile-section {
-  background-color: #f8f9fa; /* Light background color for profile section */
-  padding: 20px;
+h2 {
+  padding: 1rem;
+  color: #3a2d97;
 }
 
-.user-info {
+mat-toolbar{
+  position:fixed;
+  top:0;
+  z-index: 2;
+  width: 99%;
+  border: 3px solid black;
+  background: #3a2d97;
+}
+mat-sidenav-container {
+  height:100%;
+}
+mat-sidenav {
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+  }
+
+  .entry{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding:0.75rem;
+  }
+}
+mat-sidenav-content{
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+  }
+}
+.expanded {
+  width: 250px;
+}
+
+mat-icon{
+  color: #3a2d97;
+}
+
+button{
+  margin: 10px;
+}
+input{
+  width: 10%;
+  height: 30px;
+  margin-left: 50px;
+}
+.searchButton{
+  color: white;
+}
+mat-grid-list{
+  margin-top: 64px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  background: #dddddd;
+}
+mat-grid-tile{
+  border-radius: 20px;
+}
+mat-paginator{
+  border: 3px solid black;
+  background: #3a2d97;
+  color: #adadc2;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
-
-.avatar {
-  width: 50px; /* Adjust avatar size as needed */
-  height: 50px;
-  border-radius: 50%; /* Make avatar circular */
-  margin-right: 10px; /* Spacing between avatar and username */
-}
-
-.username {
-  font-weight: bold;
-}
-
-.register-button {
-  margin-left: auto; /* Push register button to the right */
-}
-
-.programs-section {
-  padding: 20px;
-}
-
-.program-card {
-  background-color: #ffffff; /* White background color for program cards */
-  padding: 20px;
-  margin-bottom: 20px; /* Spacing between program cards */
-  border: 1px solid #dee2e6; /* Border around program cards */
-}
-
-.pagination {
-  margin-top: 20px; /* Spacing between program cards and pagination */
-  text-align: center; /* Center align pagination */
-}
-
-.pagination button {
-  margin: 0 5px; /* Spacing between pagination buttons */
+body {
+  background-color: #47281F;
 }

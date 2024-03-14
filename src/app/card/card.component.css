@@ -1,0 +1,44 @@
+mat-card{
+  width: 350px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #3a2d97;
+  color: white;
+  border:3px solid black;
+}
+mat-card:hover{
+  background-color: #adadc2;
+}
+mat-card:hover mat-card-title{
+  color: black;
+}
+mat-card:hover mat-card-subtitle{
+  color: black;
+}
+mat-card-title{
+  align-self: center;
+}
+mat-card-subtitle{
+  float: left;
+  color: gold;
+  display: flex;
+}
+.picture {
+  height: 250px;
+  border-radius: 20px;
+  width: 100%;
+  align-self: center;
+  border: 3px solid black;
+}
+.difficulty{
+  float: left;
+}
+
+.price{
+  float: right;
+  color: lightgreen;
+}
+.instructor{
+  color: #dddddd;
+  margin-left: 60px;
+}
