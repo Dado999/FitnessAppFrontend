@@ -1,22 +1,16 @@
 <mat-card>
-  <mat-card-title>Name of the fitness program</mat-card-title>
-  <img class="picture" mat-card-image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.EiAmD4U3CQ2DtJzRdFfVwwHaFh%26pid%3DApi&f=1&ipt=b9e78a302e30cdc55879c11ce531c3c50a000dc4d33359a02c0abf3470fa8f92&ipo=images" alt="Program">
-  <mat-card-title>Instructor</mat-card-title>
+  <mat-card-title>{{ program.name }}</mat-card-title>
+  <img class="picture" mat-card-image [src]="program.picture" alt="Program">
+  <mat-card-title >{{ getInstructorName()  }}</mat-card-title>
   <div>
-  <mat-card-subtitle class="difficulty">
-    <mat-icon>star</mat-icon>
-    <mat-icon>star</mat-icon>
-    <mat-icon>star</mat-icon>
-  </mat-card-subtitle>
-    <mat-card-subtitle class="instructor">
-      <mat-icon>access_time</mat-icon>
-      <mat-icon>access_time</mat-icon>
-      <mat-icon>access_time</mat-icon>
+    <mat-card-subtitle class="difficulty">
+      <mat-icon *ngIf="program.difficulty >= 1">fitness_center</mat-icon>
+      <mat-icon *ngIf="program.difficulty >= 2">fitness_center</mat-icon>
+      <mat-icon *ngIf="program.difficulty >= 3">fitness_center</mat-icon>
     </mat-card-subtitle>
-  <mat-card-subtitle class="price">
-    <mat-icon>attach_money</mat-icon>
-    <mat-icon>attach_money</mat-icon>
-    <mat-icon>attach_money</mat-icon>
-  </mat-card-subtitle>
+    <mat-card-subtitle class="price">
+      <!-- Assuming price is a number representing the cost -->
+      {{ program.price + " KM"}}
+    </mat-card-subtitle>
   </div>
 </mat-card>

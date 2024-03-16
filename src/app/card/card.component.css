@@ -20,7 +20,7 @@ mat-card-title{
 }
 mat-card-subtitle{
   float: left;
-  color: gold;
+  color: crimson;
   display: flex;
 }
 .picture {
@@ -37,6 +37,7 @@ mat-card-subtitle{
 .price{
   float: right;
   color: lightgreen;
+  font-size: 20px;
 }
 .instructor{
   color: #dddddd;

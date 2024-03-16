@@ -12,29 +12,8 @@
   </button>
 </mat-toolbar>
 <mat-grid-list cols="4" gutterSize="0px" rowHeight="400px">
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-card></app-card>
+  <mat-grid-tile *ngFor="let program of programs">
+    <app-card [program]="program"></app-card>
   </mat-grid-tile>
 </mat-grid-list>
 <mat-paginator pageSize="8">

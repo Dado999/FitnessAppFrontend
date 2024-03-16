@@ -1,0 +1,659 @@
+[NX Daemon Server] - 2024-03-14T21:22:40.566Z - Started listening on: \\.\pipe\nx\C:\Users\Korisnik\AppData\Local\Temp\1616ff86ebdbacaa526d\d.sock
+[NX Daemon Server] - 2024-03-14T21:22:40.575Z - [WATCHER]: Subscribed to changes within: C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend (native)
+[NX Daemon Server] - 2024-03-14T21:22:40.578Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-14T21:22:40.580Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-14T21:22:40.582Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-14T21:22:40.584Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-14T21:22:40.586Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-14T21:22:40.586Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-14T21:22:40.586Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~12a55ddf'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~12a55ddf'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~27a79ca6'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~27a79ca6'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3e3c7a16'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3e3c7a16'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~fff9edcc'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~fff9edcc'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+[NX Daemon Server] - 2024-03-14T21:22:40.952Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-14T21:22:41.008Z - Time taken for 'total for creating and serializing project graph' 367.1527ms
+[NX Daemon Server] - 2024-03-14T21:22:41.016Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-14T21:22:41.019Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 367. Response time: 66.
+[NX Daemon Server] - 2024-03-14T21:22:41.025Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-14T21:22:41.129Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-14T21:22:41.130Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-14T21:22:49.360Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-14T21:22:53.223Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-14T21:24:57.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T08:54:23.089Z - Started listening on: \\.\pipe\nx\C:\Users\Korisnik\AppData\Local\Temp\1616ff86ebdbacaa526d\d.sock
+[NX Daemon Server] - 2024-03-15T08:54:23.097Z - [WATCHER]: Subscribed to changes within: C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend (native)
+[NX Daemon Server] - 2024-03-15T08:54:23.099Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-15T08:54:23.100Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-15T08:54:23.101Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-15T08:54:23.103Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-15T08:54:23.104Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T08:54:23.105Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-15T08:54:23.105Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~e46528eb'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~e46528eb'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d3ba39a8'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d3ba39a8'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~cdf4aff4'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~cdf4aff4'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~304ac25c'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~304ac25c'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async getCachedSerializedProjectGraphPromise (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+    at async handleResult (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:110:16)
+    at async handleMessage (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\server.js:81:9)
+[NX Daemon Server] - 2024-03-15T08:54:23.229Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-15T08:54:23.231Z - Time taken for 'total for creating and serializing project graph' 125.96969999999999ms
+[NX Daemon Server] - 2024-03-15T08:54:23.232Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-15T08:54:23.232Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 126. Response time: 3.
+[NX Daemon Server] - 2024-03-15T08:54:23.236Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-15T08:54:23.297Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-15T08:54:23.297Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-15T08:54:46.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T08:58:50.489Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T09:00:07.545Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:36:09.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:36:09.391Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:36:09.693Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:48:39.635Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:49:25.221Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:49:25.240Z - [WATCHER]: src/app/models/program.model.ts was created or restored
+[NX Daemon Server] - 2024-03-15T10:49:25.347Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:49:25.348Z - [REQUEST]: src/app/models/program.model.ts
+[NX Daemon Server] - 2024-03-15T10:49:25.348Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~314aeb99'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~314aeb99'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d3c805a5'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d3c805a5'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~23f51982'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~23f51982'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4504e16a'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4504e16a'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:49:25.462Z - Time taken for 'hash changed files from watcher' 1.6743000000715256ms
+[NX Daemon Server] - 2024-03-15T10:52:22.725Z - [WATCHER]: src/app/models/program.model.ts was modified
+[NX Daemon Server] - 2024-03-15T10:52:22.726Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:52:22.940Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:52:22.940Z - [REQUEST]: src/app/models/program.model.ts
+[NX Daemon Server] - 2024-03-15T10:52:22.940Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~5fe17472'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~5fe17472'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~9b9b1302'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~9b9b1302'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~608b8949'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~608b8949'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4569677c'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4569677c'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:52:22.989Z - Time taken for 'hash changed files from watcher' 0.2194999996572733ms
+[NX Daemon Server] - 2024-03-15T10:52:30.876Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:52:30.877Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-03-15T10:52:30.989Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:52:30.989Z - [REQUEST]: src/app/program.service.spec.ts,src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:52:30.989Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~dc8129f2'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~dc8129f2'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~42d1a1b6'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~42d1a1b6'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d92b9a8e'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d92b9a8e'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~309ac756'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~309ac756'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:52:31.037Z - Time taken for 'hash changed files from watcher' 2.7527000000700355ms
+[NX Daemon Server] - 2024-03-15T10:53:55.094Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T10:53:55.094Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:53:55.306Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:53:55.306Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:53:55.306Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~a1f25e90'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~a1f25e90'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~83a48a25'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~83a48a25'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~fc1517bc'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~fc1517bc'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~5c9dd646'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~5c9dd646'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:53:55.350Z - Time taken for 'hash changed files from watcher' 0.2977999998256564ms
+[NX Daemon Server] - 2024-03-15T10:53:55.541Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:54:19.098Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:54:19.100Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T10:54:19.512Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:54:19.512Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:54:19.512Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3b682737'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3b682737'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~b17065ad'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~b17065ad'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~8452b41c'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~8452b41c'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~8ea80977'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~8ea80977'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:54:19.560Z - Time taken for 'hash changed files from watcher' 0.3426000000908971ms
+[NX Daemon Server] - 2024-03-15T10:55:42.558Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:55:42.559Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T10:55:43.365Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:55:43.365Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:55:43.365Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~c192c596'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~c192c596'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~c01e9f1e'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~c01e9f1e'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~e1fd9fc0'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~e1fd9fc0'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~cba417d4'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~cba417d4'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:55:43.406Z - Time taken for 'hash changed files from watcher' 0.23300000000745058ms
+[NX Daemon Server] - 2024-03-15T10:56:50.573Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T10:56:50.574Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:56:52.187Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:56:52.187Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:56:52.187Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~a5b55f1f'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~a5b55f1f'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d12bab7e'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~d12bab7e'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~deb1ab54'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~deb1ab54'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~af167741'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~af167741'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:56:52.239Z - Time taken for 'hash changed files from watcher' 0.471199999563396ms
+[NX Daemon Server] - 2024-03-15T10:56:59.482Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T10:56:59.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T10:57:02.682Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T10:57:02.682Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T10:57:02.682Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~32970486'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~32970486'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~454c8fb1'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~454c8fb1'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~efa20130'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~efa20130'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4216abd1'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4216abd1'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T10:57:02.733Z - Time taken for 'hash changed files from watcher' 0.32450000010430813ms
+[NX Daemon Server] - 2024-03-15T11:00:29.766Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T11:00:29.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:00:30.224Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:00:36.177Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T11:00:36.178Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T11:00:36.178Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~899fe248'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~899fe248'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~059d619c'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~059d619c'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~30f78f79'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~30f78f79'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~db79d5dc'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~db79d5dc'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T11:00:36.308Z - Time taken for 'hash changed files from watcher' 0.2767000002786517ms
+[NX Daemon Server] - 2024-03-15T11:01:14.943Z - [WATCHER]: src/app/program.service.ts was modified
+[NX Daemon Server] - 2024-03-15T11:01:14.943Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:01:21.351Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T11:01:21.352Z - [REQUEST]: src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T11:01:21.352Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~0a76ebc3'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~0a76ebc3'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~f7ccc84d'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~f7ccc84d'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3b18c58d'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~3b18c58d'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~da611c2d'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~da611c2d'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T11:01:21.460Z - Time taken for 'hash changed files from watcher' 0.26690000016242266ms
+[NX Daemon Server] - 2024-03-15T11:05:27.097Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-03-15T11:05:27.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:05:33.502Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-15T11:05:33.502Z - [REQUEST]: src/app/homepage/homepage.component.ts,src/app/program.service.ts
+[NX Daemon Server] - 2024-03-15T11:05:33.502Z - [REQUEST]: 
+ERROR (1) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4fa5af5d'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~4fa5af5d'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (2) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~7715ddc5'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~7715ddc5'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (3) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~2e8ac02c'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~2e8ac02c'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+ERROR (4) when writing 
+ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~2ab4a8e6'
+Error: ENOENT: no such file or directory, open 'C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\.nx\cache\project-graph.json~2ab4a8e6'
+    at writeFileSync (node:fs:2352:20)
+    at writeJsonFile (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\utils\fileutils.js:55:28)
+    at writeCache (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\nx-deps-cache.js:101:43)
+    at buildProjectGraphUsingProjectFileMap (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\project-graph\build-project-graph.js:71:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createAndSerializeProjectGraph (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:175:55)
+    at async Timeout._onTimeout (C:\Users\Korisnik\Documents\Projects\Intellij\FitnessApp\FitnessAppFrontend\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:81:13)
+[NX Daemon Server] - 2024-03-15T11:05:33.579Z - Time taken for 'hash changed files from watcher' 0.37080000061541796ms
+[NX Daemon Server] - 2024-03-15T11:09:32.130Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:09:35.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:19:00.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T11:39:18.991Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-15T12:05:43.125Z - [WATCHER]: Processing file changes in outputs
