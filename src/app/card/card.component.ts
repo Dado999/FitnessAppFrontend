@@ -1,36 +1,36 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {MatCardModule} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {Program} from "../models/program.model";
-import {NgIf} from "@angular/common";
+import {AsyncPipe, NgIf} from "@angular/common";
 import {Instructor} from "../models/instructor.model";
-import {map, Observable} from "rxjs";
 import {InstructorService} from "../instructor.service";
+import {Observable, tap} from "rxjs";
+import {Router, RouterLink} from "@angular/router";
+import {ProgramService} from "../program.service";
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatCardModule, MatIcon, NgIf],
+  imports: [MatCardModule, MatIcon, NgIf, AsyncPipe, RouterLink],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   @Input() program!: Program;
-  instructor!: Instructor;
+  instructor$!: Observable<Instructor>;
 
   constructor(private insService: InstructorService) {
   }
-  protected readonly Array = Array;
 
-  getInstructorName(): string{
-    this.getInstructor(this.program.instructorByIdInstructor);
-    return this.instructor.name + " " + this.instructor.lastName;
+  ngOnInit() {
+    this.instructor$ = this.getInstructor(this.program.instructorByIdInstructor);
   }
 
-  getInstructor(id: number){
-    this.insService.getInstructor(id.toString()).subscribe((ins:Instructor) => {
-      this.instructor = ins;
-      console.log(this.instructor);
-    })
+  getInstructor(id: number): Observable<Instructor> {
+    return this.insService.getInstructor(id).pipe(
+      tap((instructor: Instructor) => {
+      })
+    );
   }
 }

@@ -1,0 +1,36 @@
+.one-comment{
+  border: 3px solid black;
+  height: 15vh;
+  border-radius: 8px;
+  margin-top: 3px;
+  background-color: #dddddd;
+  display: flex; /* Add this */
+  align-items: center; /* Add this */
+}
+
+.comment-avatar{
+  border-radius: 300px;
+  height: 9vh;
+  width: 7%;
+  margin-left: 3px;
+}
+
+.text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 10vh;
+  margin-top: -45px;
+  margin-left: 4px;
+}
+
+.comment-text{
+  color: black;
+}
+
+.name-surname{
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}

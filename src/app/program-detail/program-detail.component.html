@@ -1,0 +1,52 @@
+<<mat-toolbar xmlns="http://www.w3.org/1999/html">
+  <h1>{{(authService.currentUser) ? authService.currentUser.username : 'Guest user'}}</h1>
+  <ng-container *ngIf="!authService.currentUser">
+  <button mat-icon-button aria-label="Menu icon" routerLink="/register" matTooltip="Register">
+    <mat-icon style="color: #dddddd">app_registration</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Menu icon" routerLink="" matTooltip="Login">
+    <mat-icon style="color: #dddddd">login</mat-icon>
+  </button>
+  </ng-container>
+  <ng-container *ngIf="authService.currentUser">
+    <button mat-icon-button aria-label="Settings" matTooltip="Settings">
+      <mat-icon style="color: #dddddd">settings</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Messages" matTooltip="Messages">
+      <mat-icon style="color: #dddddd">message</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Bought Programs" matTooltip="Bought Programs">
+      <mat-icon style="color: #dddddd">shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Logout" routerLink="" matTooltip="Logout" (click)="authService.logoutUser()">
+      <mat-icon style="color: #dddddd">logout</mat-icon>
+    </button>
+  </ng-container>
+</mat-toolbar>>
+<div class="container">
+<div class="product-container">
+  <div class="product-card">
+    <img class="product-image" [src]="program.picture" alt="Product Image">
+    <div class="product-details">
+      <h2 class="product-title">{{ program.name }}</h2>
+      <p class="product-price">{{ program.price + " " + 'KM'  }}</p>
+      <button class="buy-button" [class.disabled]="!authService.currentUser" (click)="authService.currentUser ? openBuyForm() : {}" [style]="authService.currentUser ? {} : {'width': '100%', 'border-radius': '8px', 'height': '50px', 'font-weight': 'bolder', 'font-size': '18px', 'background-color': '#cccccc', 'color': '#888888', 'cursor': 'not-allowed'}">
+  <span class="material-symbols-outlined">
+    Buy
+  </span>
+      </button>
+    </div>
+  </div>
+</div>
+  <div class="comment-section">
+    <mat-card class="comment-mat-card">
+      <mat-card-title>Comments</mat-card-title>
+      <div class="scrollable">
+      <mat-card-content *ngFor="let com of comments">
+        <app-comment [idUser] = com.iduser [commentText]= com.text ></app-comment>
+      </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@angular/material@latest/bundles/material.umd.js"></script>

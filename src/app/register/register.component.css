@@ -1,15 +1,3 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #47281F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   color: #3a2d97;
   width: 320px;
@@ -22,7 +10,7 @@ body {
   background: rgba(255,255,255,0.5);
   /*background: linear-gradient(to bottom right, #f5f5f6,#adadc2);*/
   background: #d3d7dd;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .row {
@@ -65,7 +53,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   opacity: 0.9;
   border-radius: 20px;
 }
-
 .btn:hover {
   opacity: 1;
 }

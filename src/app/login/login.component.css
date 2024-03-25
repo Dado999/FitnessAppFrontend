@@ -16,7 +16,7 @@ body {
   background: rgba(255,255,255,0.5);
   /*background: linear-gradient(to bottom right, #f5f5f6,#adadc2);*/
   background: #d3d7dd;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 input[type=text], input[type=password] {

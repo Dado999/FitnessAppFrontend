@@ -1,0 +1,24 @@
+h1 {
+  padding: 2px ;
+  color: #d3d7dd;
+}
+mat-toolbar{
+  position:fixed;
+  top:0;
+  z-index: 2;
+  width: 99%;
+  background: #3a2d97;
+}
+mat-icon{
+  color: #3a2d97;
+}
+.search-button{
+  margin: 8px;
+}
+.profile-avatar{
+  border-radius: 400px;
+  height: 8vh;
+  width: 4%;
+  margin-right: 10px;
+}
+

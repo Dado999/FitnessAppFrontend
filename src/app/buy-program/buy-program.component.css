@@ -1,0 +1,13 @@
+.container{
+  border-radius: 4px;
+  background-color: #3a2d97;
+  color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  align-items: center;
+}
+mat-form-field{
+  padding: 10px;
+  border-radius: 8px;
+}

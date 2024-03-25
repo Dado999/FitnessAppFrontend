@@ -13,6 +13,10 @@ export class UserServiceService {
     return this.http.get<User>('http://localhost:8080/users/username/'+username);
   }
 
+  getUserId(id:number):Observable<User>{
+    return this.http.get<User>('http://localhost:8080/users/id/' + id);
+  }
+
   registerUser(userData: any): Observable<any>{
     return this.http.post('http://localhost:8080/users/',userData);
   }

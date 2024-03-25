@@ -13,4 +13,7 @@ export class ProgramService {
   getPrograms(): Observable<Program[]>{
       return this.http.get<Program[]>('http://localhost:8080/programs')
   }
+  getProgram(id:number): Observable<Program>{
+    return this.http.get<Program>('http://localhost:8080/programs/' + id);
+  }
 }

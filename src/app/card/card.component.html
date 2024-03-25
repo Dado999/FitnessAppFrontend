@@ -1,7 +1,7 @@
-<mat-card>
+<mat-card [routerLink]="['/program', program.idprogram]">
   <mat-card-title>{{ program.name }}</mat-card-title>
   <img class="picture" mat-card-image [src]="program.picture" alt="Program">
-  <mat-card-title >{{ getInstructorName()  }}</mat-card-title>
+<mat-card-title >{{ (instructor$ | async)?.name + ' ' + (instructor$ | async)?.lastname}}</mat-card-title>
   <div>
     <mat-card-subtitle class="difficulty">
       <mat-icon *ngIf="program.difficulty >= 1">fitness_center</mat-icon>

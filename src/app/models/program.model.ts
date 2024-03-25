@@ -1,5 +1,5 @@
 export class Program{
-  idProgram!: number;
+  idprogram!: number;
   price!: number;
   name!: string;
   duration!: number;

@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <img [src]="(authService.currentUser) ? authService.currentUser.avatar : './assets/avatars/generic.jpg'" class="profile-avatar">
+  <h1>{{(authService.currentUser) ? authService.currentUser.username : 'Guest user'}}</h1>
+  <ng-container *ngIf="!authService.currentUser">
+    <button mat-icon-button aria-label="Register" routerLink="/register" matTooltip="Register">
+      <mat-icon style="color: #dddddd">app_registration</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Login" routerLink="" matTooltip="Login">
+      <mat-icon style="color: #dddddd">login</mat-icon>
+    </button>
+  </ng-container>
+  <input class="search-button"type="tel" matInput placeholder="Search" name="search" [(ngModel)]="search" (keydown.enter)="filterPrograms()">
+  <button mat-icon-button aria-label="Search" (click)="filterPrograms()" matTooltip="Search">
+    <mat-icon style="color: #dddddd">search</mat-icon>
+  </button>
+  <ng-container *ngIf="authService.currentUser">
+  <button mat-icon-button aria-label="Settings" matTooltip="Settings" (click)="openSettingsForm()">
+    <mat-icon style="color: #dddddd">settings</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Messages" matTooltip="Messages">
+    <mat-icon style="color: #dddddd">message</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Bought Programs" matTooltip="Bought Programs">
+    <mat-icon style="color: #dddddd">shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Logout" routerLink="" matTooltip="Logout" (click)="authService.logoutUser()">
+    <mat-icon style="color: #dddddd">logout</mat-icon>
+  </button>
+  </ng-container>
+</mat-toolbar>

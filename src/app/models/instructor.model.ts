@@ -1,5 +1,5 @@
 export class Instructor{
   name!: string;
-  lastName!: string;
+  lastname!: string;
   contact!: string;
 }

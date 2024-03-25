@@ -1,0 +1,32 @@
+<div class="container" *ngIf="authService.currentUser">
+  <div class="settings-form">
+    <h2>Settings</h2>
+    <form (ngSubmit)="saveChanges()" #settingsForm="ngForm" enctype="multipart/form-data">
+      <div class="form-group profile-avatar-form-group">
+        <img [src]="avatarCopy" class="profile-avatar" (click)="fileInput.click()" matTooltip="Change avatar">
+        <input type="file" #fileInput style="display: none" (change)="onFileSelected($event)">
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="authService.currentUser.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label>Surname</label>
+        <input type="text" [(ngModel)]="authService.currentUser.surname" name="surname" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <div class="password-container">
+          <input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="authService.currentUser.password" name="password" required>
+          <img src="./assets/hide.png" alt="toggle visibility" id="togglePassword" style="cursor: pointer;" (click)="togglePassword()">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="authService.currentUser.email" name="email" required>
+      </div>
+      <button class="submit-button" type="submit" [disabled]="settingsForm.invalid">Save Changes</button>
+    </form>
+  </div>
+</div>

@@ -1,22 +1,13 @@
-<mat-toolbar xmlns="http://www.w3.org/1999/html">
-  <h1>Guest User</h1>
-  <button mat-raised-button aria-label="Menu icon" routerLink="/register">
-    Register
-  </button>
-  <button mat-raised-button aria-label="Menu icon" routerLink="/app-card">
-     Login
-  </button>
-    <input placeholder="Search" matNativeControl>
-  <button mat-icon-button aria-label="Menu icon" routerLink="#">
-    <mat-icon class="searchButton">search</mat-icon>
-  </button>
-</mat-toolbar>
+<app-toolbar></app-toolbar>
 <mat-grid-list cols="4" gutterSize="0px" rowHeight="400px">
-  <mat-grid-tile *ngFor="let program of programs">
+  <mat-grid-tile *ngFor="let program of  authService.searchedPrograms.slice(pageEvent.pageIndex * pageEvent.pageSize, (pageEvent.pageIndex + 1) * pageEvent.pageSize)">
     <app-card [program]="program"></app-card>
   </mat-grid-tile>
 </mat-grid-list>
-<mat-paginator pageSize="8">
 
+<mat-paginator [length]="authService.programs.length"
+               [pageIndex]="pageEvent.pageIndex"
+               [pageSize]="pageEvent.pageSize"
+               [pageSizeOptions]="[5, 8,]"
+               (page)="pageEvent = $event">
 </mat-paginator>
-

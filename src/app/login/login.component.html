@@ -1,5 +1,4 @@
 <div class="container">
-  <!-- Login Form -->
   <label id="uname"><b>Username</b></label>
   <input #usernameInput type="text" placeholder="Enter Username" name="uname" required>
 
@@ -8,6 +7,6 @@
 
   <button (click)="onLoginClick()" class="btn cool-button">Login</button>
   <button routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn cool-button">Register</button>
-  <button routerLink="/guest-homepage" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn cool-button">Continue as guest</button>
+  <button routerLink="/homepage" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn cool-button">Continue as guest</button>
     <span class="psw" style="color: #3a2d97">Forgot <a routerLink="password-reset" routerLinkActive="active" ariaCurrentWhenActive="page" href="#"  style="color: #3a2d97">password?</a></span>
 </div>

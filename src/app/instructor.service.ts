@@ -10,7 +10,7 @@ export class InstructorService {
 
   constructor(private http: HttpClient) { }
 
-  getInstructor(id:string): Observable<Instructor>{
+  getInstructor(id:number): Observable<Instructor>{
     return this.http.get<Instructor>('http://localhost:8080/instructors/' + id);
   }
 }
