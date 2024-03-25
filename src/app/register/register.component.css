@@ -11,6 +11,9 @@
   /*background: linear-gradient(to bottom right, #f5f5f6,#adadc2);*/
   background: #d3d7dd;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
@@ -55,4 +58,15 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
 }
 .btn:hover {
   opacity: 1;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  height: 10vh;
+  width: 100%;
 }

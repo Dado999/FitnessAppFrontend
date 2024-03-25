@@ -9,6 +9,7 @@
 
       <label for="username"><b>Username</b></label>
       <input #username type="text" id="username" name="username" required>
+
     </div>
 
     <div class="column">
@@ -22,9 +23,12 @@
       <input #email type="email" id="email" name="email" required>
     </div>
   </div>
+    <label for="city"><b>City</b></label>
+    <input #city type="text" id="city" name="city" required>
 
-  <label for="city"><b>City</b></label>
-  <input #city type="text" id="city" name="city" required>
+  <div class="center-content">
+    <img src='./assets/avatars/generic.jpg' class="profile-avatar">
+  </div>
 
   <button class="btn" (click)="registerUser()">Register</button>
   <button class="btn" routerLinkActive="active" routerLink="" ariaCurrentWhenActive="page">Back to login</button>
