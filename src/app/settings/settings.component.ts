@@ -26,7 +26,6 @@ export class SettingsComponent {
   @ViewChild('fileInput') fileInput!: ElementRef;
   password = '';
   showPassword = false;
-  currentAvatar: File | undefined;
   // @ts-ignore
   avatarCopy: string = this.authService.currentUser.avatar;
   base64Output!: string;

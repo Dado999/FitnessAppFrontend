@@ -27,7 +27,8 @@
     <input #city type="text" id="city" name="city" required>
 
   <div class="center-content">
-    <img src='./assets/avatars/generic.jpg' class="profile-avatar">
+    <img [src]="base64Output ? 'data:image/jpeg;base64,' + base64Output : './assets/avatars/generic.jpg'" class="profile-avatar" (click)="fileInput.click()" matTooltip="Set avatar">
+    <input type="file" #fileInput style="display: none" (change)="onFileSelected($event)">
   </div>
 
   <button class="btn" (click)="registerUser()">Register</button>
